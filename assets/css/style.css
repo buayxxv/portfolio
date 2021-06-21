@@ -3,6 +3,8 @@
 	display: flex;
 	flex-flow: row wrap;
 	text-align: center;
+	margin-right: 10px;
+	margin-left: 10px;
 }
 * {
 	padding: 0;
@@ -56,6 +58,7 @@ nav ul li a{
 	float: right;
 	line-height: 80px;
 	margin-right: 40px;
+	display: none;
 }
 #check{
 	display: none;
@@ -74,16 +77,32 @@ a.active,a:hover{
 	width: 700px;
 	margin-left: 15px;
 	margin-top: 20px;
+	margin-bottom: 30px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .avatar {
 	font-family: sans-serif;
 	text-align: center;
-	max-width: 400px;
-	box-shadow: 00 10px rgba(0, 0, 0, 0.2);
+
+	max-width: 200px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 	padding: 20px;
 
 }
-
+.avatar-name{
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.avatar-title {
+	margin-bottom: 20px;
+}
+.avatar-detail {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.9em;
+}
 #avatarimg {
 	border-radius: 50%;
 	height: 150px;
@@ -91,8 +110,6 @@ a.active,a:hover{
 	object-fit: cover;
 	margin: 0 auto 20px auto;
 	display: block;
-
-	
 }
 
 .work {
@@ -104,6 +121,7 @@ a.active,a:hover{
 	/*border-left: black solid 2px;*/
 	margin: 4px;
 	padding: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .about-me{
@@ -111,6 +129,7 @@ a.active,a:hover{
 	flex: 1;
 	/*border-left: black solid 2px;*/
 	margin: 4px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 	
 }
 .resume{
@@ -118,6 +137,7 @@ a.active,a:hover{
 	flex: 1;
 	/*border-left: black solid 2px;*/
 	margin: 4px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .contact-me{
@@ -125,6 +145,7 @@ a.active,a:hover{
 	flex: 1;
 	/*border-left: black solid 2px;*/
 	margin: 4px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 @media all and (min-width: 800px) {
@@ -159,6 +180,20 @@ a.active,a:hover{
 .foots {
 	margin: 20px;
 	display: inline-block;
+	float: right;
+	padding-right: 50px;
+	padding-top: 20px;
 }
 
-
+#contactimg{
+	height: 200px;
+}
+#mail {
+	margin-right: 50px;
+	color: cornsilk;
+	padding: 10px;
+}
+#phone {
+	color: cornsilk;
+	padding: 10px;
+}
